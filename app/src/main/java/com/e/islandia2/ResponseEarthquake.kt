@@ -1,7 +1,7 @@
 package com.e.islandia2
 
-data class Response (
-    val results:List<Earthquake>
+data class ResponseEarthquake (
+    val results:MutableList<Earthquake>
 )
 
 data class Earthquake (
@@ -12,6 +12,5 @@ data class Earthquake (
     val size:Double,
     val quality:Double,
     val humanReadableLocation:String
-
 
 )
